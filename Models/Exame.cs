@@ -11,6 +11,8 @@ namespace IrisSandbox.Models
     {
         public string Codigo { get; set; } = null!;
         public string Descricao { get; set; } = null!;
+        public int QuantidadeTeste { get; set; }
+        public bool ExibeTeste { get; set; }
 
         public List<AmostraExame> Amostras { get; set; } = null!;
     }

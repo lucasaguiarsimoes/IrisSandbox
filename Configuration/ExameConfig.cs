@@ -17,6 +17,14 @@ namespace IrisSandbox.Configuration
                 .IsRequired()
                 .HasMaxLength(100);
 
+            builder.Property(e => e.QuantidadeTeste)
+                .HasDefaultValue(5)
+                .IsRequired();
+
+            builder.Property(e => e.ExibeTeste)
+                .HasDefaultValue(true)
+                .IsRequired();
+
             builder.HasIndex(a => a.Codigo)
                 .IsUnique();
 
